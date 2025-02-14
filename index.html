@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hiệp Bug - Valentine</title>
+  <link rel="icon" href="./gif/favicon.ico" type="image/x-icon">
   <style>
     body {
       display: flex;
@@ -73,7 +74,7 @@
 <body>
   <div class="container-top" id="containerTop">
     <h1 id="message">Cậu sẽ là Valentine của tớ chứ?</h1>
-    <img id="catImage" src=".././gif/0.gif" alt="Cute Capoo Cat" class="cat">
+    <img id="catImage" src="./gif/0.gif" alt="Cute Capoo Cat" class="cat">
   </div>
   <div class="buttons" id="buttonsContainer">
     <button class="button yes-button" id="yesButton" onclick="handleYes()">Đồng ý</button>
@@ -91,7 +92,7 @@
 
       message.textContent = "Yeahhh!!! Tớ biết cậu sẽ đồng ý mà ❤️❤️❤️";
       message.style.color = "#ff69b4";
-      catImage.src = ".././gif/yes.gif";
+      catImage.src = "./gif/yes.gif";
       buttonsContainer.style.display = "none";
       catImage.classList.add('enlarged');
     }
@@ -121,10 +122,10 @@
       noButton.textContent = noButtonTexts[noClickCount % noButtonTexts.length];
 
       const catImages = [
-        ".././gif/1.gif",
-        ".././gif/2.gif",
-        ".././gif/3.gif",
-        ".././gif/4.gif"
+        "./gif/1.gif",
+        "./gif/2.gif",
+        "./gif/3.gif",
+        "./gif/4.gif"
       ];
       catImage.src = catImages[noClickCount % catImages.length];
 
